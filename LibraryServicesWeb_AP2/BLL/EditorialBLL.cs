@@ -146,23 +146,6 @@ namespace LibraryServicesWeb_AP2.BLL
             return encontrado;
         }
 
-        public static List<Editorial> GetEditorial()
-        {
-            List<Editorial> lista = new List<Editorial>();
-            Contexto contexto = new Contexto();
-            try
-            {
-                lista = contexto.Editorials.ToList();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                contexto.Dispose();
-            }
-            return lista;
-        }
+      
     }
 }
